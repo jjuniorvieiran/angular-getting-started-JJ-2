@@ -55,7 +55,30 @@
                        (ratingClicked)='onRatingClicked($event)'>
               </pm-star>
             </td>
-          </tr> -->
+          </tr>  -->
+          <tr *ngFor='let product of products'>
+            <td>
+              <img *ngIf='showImage'
+                   [src]='product.imageUrl'
+                   [title]='product.productName'
+                   [style.width.px]='imageWidth'
+                   [style.margin.px]='imageMargin'>
+            </td>
+            <td>
+              <a >
+                {{ product.productName }}
+              </a>
+            </td>
+            <td>{{ product.productCode }}</td>
+            <td>{{ product.releaseDate }}</td>
+            <td>{{ product.price }}</td>
+            <td>
+              <!-- <pm-star [rating]='product.starRating'
+                       (ratingClicked)='onRatingClicked($event)'>
+              </pm-star> -->
+              {{product.starRating}}
+            </td>
+          </tr> 
         </tbody>
       </table>
     </div>
