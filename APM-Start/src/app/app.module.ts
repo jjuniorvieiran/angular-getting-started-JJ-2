@@ -10,6 +10,6 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] //define startup component the application
 })
 export class AppModule { }
