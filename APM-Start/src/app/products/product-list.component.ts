@@ -12,8 +12,8 @@ export class ProductListComponent
 //implements OnInit 
 {
   pageTitle: string = 'Product List';
-  // imageWidth = 50;
-  // imageMargin = 2;
+  imageWidth = 50;
+  imageMargin = 2;
   // showImage = false;
   // errorMessage = '';
 
