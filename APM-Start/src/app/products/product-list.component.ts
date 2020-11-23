@@ -14,7 +14,7 @@ export class ProductListComponent
   pageTitle: string = 'Product List';
   imageWidth = 50;
   imageMargin = 2;
-  // showImage = false;
+  showImage = false;
   // errorMessage = '';
 
   // _listFilter = '';
@@ -63,9 +63,9 @@ export class ProductListComponent
   //     product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1);
   // }
 
-  // toggleImage(): void {
-  //   this.showImage = !this.showImage;
-  // }
+  toggleImage(): void {
+    this.showImage = !this.showImage;
+  }
 
   // ngOnInit(): void {
   //   this.productService.getProducts().subscribe({
