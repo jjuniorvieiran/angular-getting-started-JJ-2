@@ -16,8 +16,8 @@ export class ProductListComponent
   imageMargin = 2;
   showImage = false;
   // errorMessage = '';
-
-  // _listFilter = '';
+  listFilter: string = 'cat';
+  
   // get listFilter(): string {
   //   return this._listFilter;
   // }
