@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IProduct } from './product';
 
 // import { IProduct } from './product';
 // import { ProductService } from './product.service';
@@ -17,7 +18,7 @@ export class ProductListComponent
   showImage = false;
   // errorMessage = '';
   listFilter: string = 'cat';
-  
+
   // get listFilter(): string {
   //   return this._listFilter;
   // }
@@ -28,7 +29,7 @@ export class ProductListComponent
 
   // filteredProducts: IProduct[] = [];
   // products: IProduct[] = [];
-    products: any[] = [
+    products: IProduct[] = [
       {
         "productId": 1,
         "productName": "Leaf Rake",
