@@ -9,8 +9,7 @@ import { IProduct } from './product';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent 
-//implements OnInit 
+export class ProductListComponent implements OnInit 
 {
   pageTitle: string = 'Product List';
   imageWidth = 50;
@@ -68,13 +67,14 @@ export class ProductListComponent
     this.showImage = !this.showImage;
   }
 
-  // ngOnInit(): void {
-  //   this.productService.getProducts().subscribe({
-  //     next: products => {
-  //       this.products = products;
-  //       this.filteredProducts = this.products;
-  //     },
-  //     error: err => this.errorMessage = err
-  //   });
-  // }
+  ngOnInit(): void {
+    // this.productService.getProducts().subscribe({
+    //   next: products => {
+    //     this.products = products;
+    //     this.filteredProducts = this.products;
+    //   },
+    //   error: err => this.errorMessage = err
+    // });
+    console.log("ngOninit")
+  }
 }
