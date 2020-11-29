@@ -76,6 +76,7 @@
                          <!-- input decorator -->
               <pm-star [rating]='product.starRating'
                        (ratingClicked)='onRatingClicked($event)'>  
+                       <!-- using @output and raising event to pass data from start component to product component -->
               </pm-star>
             </td>
           </tr> 
