@@ -6,7 +6,7 @@ import { catchError, tap, map } from 'rxjs/operators';
 import { IProduct } from './product';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' // anywhere in the application can inject ProductService
 })
 export class ProductService {
   // If using Stackblitz, replace the url with this line
