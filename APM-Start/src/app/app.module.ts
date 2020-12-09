@@ -9,13 +9,21 @@ import { StarComponent } from './shared/star.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailComponent } from './products/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      { path: 'products', component: ProductListComponent },
+      { path: 'product/:id', component: ProductDetailComponent },
+      { path: 'welcome', component: WelcomeComponent },
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+      { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
+    ]),
   ],
   declarations: [
     AppComponent,
