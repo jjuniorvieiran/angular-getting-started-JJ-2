@@ -14,7 +14,7 @@ export class ProductDetailComponent implements OnInit {
   product: IProduct | undefined;
 
   constructor(private route: ActivatedRoute,
-              private router: Router,
+              private router: Router,  // + router back to productos
               private productService: ProductService) {
   }
 
@@ -33,7 +33,7 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
-  onBack(): void {
+  onBack(): void { // + router back to productos
     this.router.navigate(['/products']);
   }
 }
