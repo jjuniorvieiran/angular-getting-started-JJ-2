@@ -19,8 +19,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "_comment": "in order to be able to use productUrl in api/products/products.json",
-            "assets": [  
+            "assets": [
               "src/favicon.ico",
               "src/assets",
               "src/api"
@@ -125,6 +124,6 @@
   },
   "defaultProject": "APM",
   "cli": {
-    "analytics": "7d683082-5aae-4fde-adea-00d85bb9e8d6"
+    "analytics": "6b02fdac-3330-4ef3-9c13-d74529af979b"
   }
 }
