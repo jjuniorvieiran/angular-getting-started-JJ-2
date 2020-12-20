@@ -21,7 +21,7 @@ import { SharedModule } from '../shared/shared.module';
         component: ProductDetailComponent
       }
     ]),
-    SharedModule
+    SharedModule // should import sharedModule in all the pages the new pages
   ]
 })
 export class ProductModule { }
